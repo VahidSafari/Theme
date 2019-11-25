@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Theme</string>
+    <string name="theme_light">Theme Light</string>
+    <string name="theme_dark">Theme Dark</string>
+    <string name="theme_green">Theme Green</string>
+    <string name="theme_blue">Theme Blue</string>
+</resources>

@@ -1,0 +1,55 @@
+<resources>
+
+    <style name="AppThemeLight" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/lightColorPrimary</item>
+        <item name="colorPrimaryDark">@color/lightColorPrimaryDark</item>
+        <item name="colorAccent">@color/lightColorAccent</item>
+        <item name="android:colorBackground">@color/lightColorBackground</item>
+        <item name="JWSTextColor">@color/lightTextColor</item>
+        <item name="JWSTextColorSecondary">@color/lightTextColorSecondary</item>
+        <item name="JWSButtonTextColor">@color/colorWhite</item>
+        <item name="JWSButtonColor">@color/lightButtonColor</item>
+        <item name="JWSImageDrawable">@drawable/ic_light</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/darkColorPrimary</item>
+        <item name="colorPrimaryDark">@color/darkColorPrimaryDark</item>
+        <item name="colorAccent">@color/darkColorAccent</item>
+        <item name="android:colorBackground">@color/darkColorBackground</item>
+        <item name="JWSTextColor">@color/darkTextColor</item>
+        <item name="JWSTextColorSecondary">@color/darkTextColorSecondary</item>
+        <item name="JWSButtonTextColor">@color/colorBlack</item>
+        <item name="JWSButtonColor">@color/darkButtonColor</item>
+        <item name="JWSImageDrawable">@drawable/ic_dark</item>
+    </style>
+
+    <style name="AppThemeGreen" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/greenColorPrimary</item>
+        <item name="colorPrimaryDark">@color/greenColorPrimaryDark</item>
+        <item name="colorAccent">@color/greenColorAccent</item>
+        <item name="android:colorBackground">@color/greenColorBackground</item>
+        <item name="JWSTextColor">@color/greenTextColor</item>
+        <item name="JWSTextColorSecondary">@color/greenTextColorSecondary</item>
+        <item name="JWSButtonTextColor">@color/colorWhite</item>
+        <item name="JWSButtonColor">@color/greenButtonColor</item>
+        <item name="JWSImageDrawable">@drawable/ic_green</item>
+    </style>
+
+    <style name="AppThemeBlue" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blueColorPrimary</item>
+        <item name="colorPrimaryDark">@color/blueColorPrimaryDark</item>
+        <item name="colorAccent">@color/blueColorAccent</item>
+        <item name="android:colorBackground">@color/blueColorBackground</item>
+        <item name="JWSTextColor">@color/blueTextColor</item>
+        <item name="JWSTextColorSecondary">@color/blueTextColorSecondary</item>
+        <item name="JWSButtonTextColor">@color/colorWhite</item>
+        <item name="JWSButtonColor">@color/blueButtonColor</item>
+        <item name="JWSImageDrawable">@drawable/ic_blue</item>
+    </style>
+
+</resources>
