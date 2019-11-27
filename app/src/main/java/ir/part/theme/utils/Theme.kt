@@ -1,6 +1,7 @@
-package ir.part.theme
+package ir.part.theme.utils
 
 import android.content.Context
+import ir.part.theme.R
 
 object Theme {
 

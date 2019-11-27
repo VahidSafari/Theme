@@ -1,13 +1,14 @@
-package ir.part.theme
+package ir.part.theme.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import ir.part.theme.R
+import ir.part.theme.utils.BaseActivity
+import ir.part.theme.utils.Theme
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        setTheme(Theme.getTheme(this))
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         lightButton.setOnClickListener {
