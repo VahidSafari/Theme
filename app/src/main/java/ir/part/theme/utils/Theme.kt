@@ -7,6 +7,7 @@ object Theme {
 
     private const val PrefsName = "Theme"
     private const val ThemeName = "ThemeName"
+    const val ThemeChanged = "ThemeChanged"
 
     const val THEME_LIGHT = "Light"
     const val THEME_DARK = "Dark"

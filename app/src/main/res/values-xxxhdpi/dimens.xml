@@ -1,0 +1,5 @@
+<resources>
+	<dimen name="dimenTest">24dp</dimen>
+	<dimen name="buttonHeight">120dp</dimen>
+	<dimen name="test">48dp</dimen>
+</resources>
