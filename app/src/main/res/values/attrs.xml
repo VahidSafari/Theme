@@ -2,7 +2,7 @@
 <resources>
     <attr name="JWSTextColor" format="color" />
     <attr name="JWSTextColorSecondary" format="color" />
-    <attr name="JWSButtonTextColor" format="color" />
-    <attr name="JWSButtonColor" format="color" />
-    <attr name="JWSImageDrawable" format="reference" />
+    <attr name="JWSSettingDrawable" format="reference" />
+    <attr name="JWSBackDrawable" format="reference" />
+    <attr name="JWSDoneDrawable" format="reference" />
 </resources>

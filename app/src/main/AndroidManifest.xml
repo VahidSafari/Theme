@@ -4,6 +4,7 @@
     package="ir.part.theme">
 
     <application
+        android:name=".ThemeApp"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

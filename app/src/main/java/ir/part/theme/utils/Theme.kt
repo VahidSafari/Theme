@@ -1,46 +1,31 @@
 package ir.part.theme.utils
 
 import android.content.Context
+import android.content.SharedPreferences
 import ir.part.theme.R
 
-object Theme {
+class Theme(context: Context) {
 
-    private const val PrefsName = "Theme"
-    private const val ThemeName = "ThemeName"
-    const val ThemeChanged = "ThemeChanged"
+    // Prefs
+    var sharedPreferences: SharedPreferences
 
-    const val THEME_LIGHT = "Light"
-    const val THEME_DARK = "Dark"
-    const val THEME_GREEN = "Green"
-    const val THEME_BLUE = "Blue"
+    // Constants
+    private val prefsName = "theme"
+    private val themeName = "themeName"
+    val themeChanged = "themeChanged"
 
-    fun getTheme(context: Context): Int {
-        val themeSaved =
-            context
-                .getSharedPreferences(
-                    PrefsName,
-                    Context.MODE_PRIVATE
-                )
-                .getString(
-                    ThemeName,
-                    ""
-                )
-        return when (themeSaved) {
-            THEME_LIGHT -> R.style.AppThemeLight
-            THEME_DARK -> R.style.AppThemeDark
-            THEME_GREEN -> R.style.AppThemeGreen
-            THEME_BLUE -> R.style.AppThemeBlue
-            else -> R.style.AppThemeLight
-        }
+    var themes: List<ThemeModel>
+
+    init {
+        sharedPreferences = context.getSharedPreferences(prefsName, Context.MODE_PRIVATE)
+        themes = createThemes(context)
     }
 
-    fun setTheme(context: Context, themeName: String) {
-        context.getSharedPreferences(
-            PrefsName,
-            Context.MODE_PRIVATE
-        )
-            .edit()
-            .putString(ThemeName, themeName)
-            .apply()
+    fun getTheme(): Int {
+        return sharedPreferences.getInt(themeName, themes[0].theme)
+    }
+
+    fun setTheme(theme: Int) {
+        sharedPreferences.edit().putInt(themeName, theme).apply()
     }
 }

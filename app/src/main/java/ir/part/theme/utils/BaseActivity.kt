@@ -1,33 +1,46 @@
 package ir.part.theme.utils
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import ir.part.theme.ThemeApp
 
 abstract class BaseActivity : AppCompatActivity(), IKDispatcher {
 
+    val mTheme = ThemeApp.mTheme
+
+    override fun attachBaseContext(newBase: Context) {
+        super.attachBaseContext(localizedContext(newBase))
+    }
+
+    override fun onStart() {
+        super.onStart()
+        localizedContext(this)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
-        setTheme(Theme.getTheme(this))
+        setTheme(mTheme.getTheme())
         super.onCreate(savedInstanceState)
         themeSubscriber()
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        unsubscribe(Theme.ThemeChanged, this::themeHandler)
+        unsubscribe(mTheme.themeChanged, this::themeHandler)
     }
 
     private fun themeSubscriber() {
-        subscribe(Theme.ThemeChanged, null, this::themeHandler)
+        subscribe(mTheme.themeChanged, null, this::themeHandler)
     }
 
     private fun themeHandler(notification: Notification<Any>) {
-        Log.d(Theme.ThemeChanged, notification.eventName)
+        Log.d(mTheme.themeChanged, notification.eventName)
         recreate()
     }
 
-    fun changeTheme(themeName: String) {
-        Theme.setTheme(this, themeName)
-        call(Theme.ThemeChanged)
+    fun changeTheme(theme: Int) {
+        mTheme.setTheme(theme)
+        call(mTheme.themeChanged)
     }
 }

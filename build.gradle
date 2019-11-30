@@ -5,7 +5,7 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.2'
@@ -19,7 +19,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+
     }
 }
 
@@ -31,6 +31,7 @@ ext {
     // Project Version
     compileVersion = 29
     buildToolsVersion = '29.0.2'
+    applicationId = "ir.part.theme"
     minSdkVersion = 17
     tagetSdkVersion = 29
     codeVersion = 1
@@ -48,17 +49,8 @@ ext {
     materialVersion = '1.2.0-alpha02'
     recyclerViewVersion = '1.1.0'
 
-    // Thread Version
-    coroutineVersion = '1.2.1'
-
-    // Room Version
-    roomDatabaseVersion = '2.2.0'
-
     // Glide Version
     glideVersion = '4.10.0'
-
-    // Parcel Version
-    parcelerVersion = '1.1.12'
 
     // Others Version
     ssp$sdpVersion = '1.0.6'

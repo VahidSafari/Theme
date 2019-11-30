@@ -2,40 +2,37 @@
 <resources>
     <color name="colorBlack">#000000</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGray">#E6E6E6</color>
 
     <!--Light Theme Colors-->
     <color name="lightColorPrimary">@color/colorWhite</color>
     <color name="lightColorPrimaryDark">@color/colorBlack</color>
     <color name="lightColorAccent">@color/colorBlack</color>
-    <color name="lightColorBackground">@color/colorWhite</color>
+    <color name="lightColorBackground">@color/colorGray</color>
     <color name="lightTextColor">@color/colorBlack</color>
     <color name="lightTextColorSecondary">@color/colorWhite</color>
-    <color name="lightButtonColor">@color/colorBlack</color>
 
     <!--Dark Theme Colors-->
-    <color name="darkColorPrimary">@color/colorBlack</color>
+    <color name="darkColorPrimary">#101010</color>
     <color name="darkColorPrimaryDark">@color/colorBlack</color>
     <color name="darkColorAccent">@color/colorBlack</color>
-    <color name="darkColorBackground">@color/colorBlack</color>
+    <color name="darkColorBackground">#2E2E2E</color>
     <color name="darkTextColor">@color/colorWhite</color>
     <color name="darkTextColorSecondary">@color/colorBlack</color>
-    <color name="darkButtonColor">@color/colorWhite</color>
 
     <!--Green Theme Colors-->
-    <color name="greenColorPrimary">#009688</color>
-    <color name="greenColorPrimaryDark">#00776C</color>
+    <color name="greenColorPrimary">#00695C</color>
+    <color name="greenColorPrimaryDark">#004D40</color>
     <color name="greenColorAccent">@color/colorBlack</color>
-    <color name="greenColorBackground">#009688</color>
+    <color name="greenColorBackground">#ACDDD8</color>
     <color name="greenTextColor">@color/colorWhite</color>
     <color name="greenTextColorSecondary">@color/colorBlack</color>
-    <color name="greenButtonColor">#4CAF50</color>
 
     <!--Blue Theme Colors-->
-    <color name="blueColorPrimary">#2196F3</color>
-    <color name="blueColorPrimaryDark">#006CC2</color>
+    <color name="blueColorPrimary">#3F51B5</color>
+    <color name="blueColorPrimaryDark">#3245B4</color>
     <color name="blueColorAccent">@color/colorBlack</color>
-    <color name="blueColorBackground">#2196F3</color>
+    <color name="blueColorBackground">#C0C9FA</color>
     <color name="blueTextColor">@color/colorWhite</color>
     <color name="blueTextColorSecondary">@color/colorBlack</color>
-    <color name="blueButtonColor">#3F51B5</color>
 </resources>

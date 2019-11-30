@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Theme</string>
+    <string name="app_name">JWS Theme Sample</string>
     <string name="theme_light">Theme Light</string>
     <string name="theme_dark">Theme Dark</string>
     <string name="theme_green">Theme Green</string>

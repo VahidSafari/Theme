@@ -8,9 +8,9 @@
         <item name="android:colorBackground">@color/lightColorBackground</item>
         <item name="JWSTextColor">@color/lightTextColor</item>
         <item name="JWSTextColorSecondary">@color/lightTextColorSecondary</item>
-        <item name="JWSButtonTextColor">@color/colorWhite</item>
-        <item name="JWSButtonColor">@color/lightButtonColor</item>
-        <item name="JWSImageDrawable">@drawable/ic_light</item>
+        <item name="JWSSettingDrawable">@drawable/ic_settings_black</item>
+        <item name="JWSBackDrawable">@drawable/ic_back_black</item>
+        <item name="JWSDoneDrawable">@drawable/ic_done_black</item>
     </style>
 
     <style name="AppThemeDark" parent="Theme.MaterialComponents.Light.NoActionBar">
@@ -21,9 +21,9 @@
         <item name="android:colorBackground">@color/darkColorBackground</item>
         <item name="JWSTextColor">@color/darkTextColor</item>
         <item name="JWSTextColorSecondary">@color/darkTextColorSecondary</item>
-        <item name="JWSButtonTextColor">@color/colorBlack</item>
-        <item name="JWSButtonColor">@color/darkButtonColor</item>
-        <item name="JWSImageDrawable">@drawable/ic_dark</item>
+        <item name="JWSSettingDrawable">@drawable/ic_settings_white</item>
+        <item name="JWSBackDrawable">@drawable/ic_back_white</item>
+        <item name="JWSDoneDrawable">@drawable/ic_done_white</item>
     </style>
 
     <style name="AppThemeGreen" parent="Theme.MaterialComponents.Light.NoActionBar">
@@ -34,9 +34,9 @@
         <item name="android:colorBackground">@color/greenColorBackground</item>
         <item name="JWSTextColor">@color/greenTextColor</item>
         <item name="JWSTextColorSecondary">@color/greenTextColorSecondary</item>
-        <item name="JWSButtonTextColor">@color/colorWhite</item>
-        <item name="JWSButtonColor">@color/greenButtonColor</item>
-        <item name="JWSImageDrawable">@drawable/ic_green</item>
+        <item name="JWSSettingDrawable">@drawable/ic_settings_white</item>
+        <item name="JWSBackDrawable">@drawable/ic_back_white</item>
+        <item name="JWSDoneDrawable">@drawable/ic_done_white</item>
     </style>
 
     <style name="AppThemeBlue" parent="Theme.MaterialComponents.Light.NoActionBar">
@@ -47,9 +47,83 @@
         <item name="android:colorBackground">@color/blueColorBackground</item>
         <item name="JWSTextColor">@color/blueTextColor</item>
         <item name="JWSTextColorSecondary">@color/blueTextColorSecondary</item>
-        <item name="JWSButtonTextColor">@color/colorWhite</item>
-        <item name="JWSButtonColor">@color/blueButtonColor</item>
-        <item name="JWSImageDrawable">@drawable/ic_blue</item>
+        <item name="JWSSettingDrawable">@drawable/ic_settings_white</item>
+        <item name="JWSBackDrawable">@drawable/ic_back_white</item>
+        <item name="JWSDoneDrawable">@drawable/ic_done_white</item>
+    </style>
+
+    <!-- TextView Size 1X -->
+    <style name="JwS_TextView_1X">
+        <item name="android:textColor">?JWSTextColor</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="JwS_TextView_Medium_1X" parent="JwS_TextView_1X">
+        <item name="android:fontFamily">@font/iran_yekan_regular</item>
+    </style>
+
+    <style name="JwS_TextView_Bold_1X" parent="JwS_TextView_1X">
+        <item name="android:fontFamily">@font/iran_yekan_bold</item>
+    </style>
+    <!-- TextView Size 1X -->
+
+    <!-- TextView Size 2X -->
+    <style name="JwS_TextView_2X">
+        <item name="android:textColor">?JWSTextColor</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+    <style name="JwS_TextView_Medium_2X" parent="JwS_TextView_2X">
+        <item name="android:fontFamily">@font/iran_yekan_regular</item>
+    </style>
+
+    <style name="JwS_TextView_Bold_2X" parent="JwS_TextView_2X">
+        <item name="android:fontFamily">@font/iran_yekan_bold</item>
+    </style>
+    <!-- TextView Size 2X -->
+
+    <!-- TextView Size 3X -->
+    <style name="JwS_TextView_3X">
+        <item name="android:textColor">?JWSTextColor</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="JwS_TextView_Medium_3X" parent="JwS_TextView_3X">
+        <item name="android:fontFamily">@font/iran_yekan_regular</item>
+    </style>
+
+    <style name="JwS_TextView_Bold_3X" parent="JwS_TextView_3X">
+        <item name="android:fontFamily">@font/iran_yekan_bold</item>
+    </style>
+    <!-- TextView Size 3X -->
+
+    <!-- TextView Size 4X -->
+    <style name="JwS_TextView_4X">
+        <item name="android:textColor">?JWSTextColor</item>
+        <item name="android:textSize">@dimen/_18ssp</item>
+    </style>
+
+    <style name="JwS_TextView_Medium_4X" parent="JwS_TextView_4X">
+        <item name="android:fontFamily">@font/iran_yekan_regular</item>
+    </style>
+
+    <style name="JwS_TextView_Bold_4X" parent="JwS_TextView_4X">
+        <item name="android:fontFamily">@font/iran_yekan_bold</item>
+    </style>
+    <!-- TextView Size 4X -->
+
+    <!-- TextView Size 5X -->
+    <style name="JwS_TextView_5X">
+        <item name="android:textColor">?JWSTextColor</item>
+        <item name="android:textSize">@dimen/_20ssp</item>
+    </style>
+
+    <style name="JwS_TextView_Medium_5X" parent="JwS_TextView_5X">
+        <item name="android:fontFamily">@font/iran_yekan_regular</item>
+    </style>
+
+    <style name="JwS_TextView_Bold_5X" parent="JwS_TextView_5X">
+        <item name="android:fontFamily">@font/iran_yekan_bold</item>
     </style>
 
 </resources>
