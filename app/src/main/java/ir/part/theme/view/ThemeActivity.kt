@@ -20,16 +20,16 @@ class ThemeActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_theme)
         lightButton.setOnClickListener {
-            themeChange(Theme.THEME_LIGHT)
+            changeTheme(Theme.THEME_LIGHT)
         }
         darkButton.setOnClickListener {
-            themeChange(Theme.THEME_DARK)
+            changeTheme(Theme.THEME_DARK)
         }
         greenButton.setOnClickListener {
-            themeChange(Theme.THEME_GREEN)
+            changeTheme(Theme.THEME_GREEN)
         }
         blueButton.setOnClickListener {
-            themeChange(Theme.THEME_BLUE)
+            changeTheme(Theme.THEME_BLUE)
         }
     }
 }

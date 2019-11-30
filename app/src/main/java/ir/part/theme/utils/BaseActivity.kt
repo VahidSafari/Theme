@@ -26,7 +26,7 @@ abstract class BaseActivity : AppCompatActivity(), IKDispatcher {
         recreate()
     }
 
-    fun themeChange(themeName: String) {
+    fun changeTheme(themeName: String) {
         Theme.setTheme(this, themeName)
         call(Theme.ThemeChanged)
     }
